@@ -1,0 +1,207 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: arial;
+}
+
+header{
+	background-color: royalblue;
+	width: 100%;
+}
+
+nav{
+	display: flex;
+	width: 95%;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+ul{
+	display: flex;
+	align-items: center;
+}
+
+li{
+	margin-left: 10px;
+	margin-right: 10px;
+	list-style: none;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
+}
+
+.container-banner{
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.banner{
+	width: 100%;
+	height: 100%;
+}
+
+.second-container{
+	margin: 20px;
+}
+
+.lista-objetos{
+	border-bottom: 1px solid;
+}
+
+.grid-container{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 20px;
+}
+
+.boton-carrito{
+	background-color: blue;
+	border-radius: 10%;
+	color: white;
+}
+
+.boton-carrito:hover{
+	background-color: violet;
+}
+
+.gift-container{
+	overflow: hidden;
+	border: 1px solid;
+}
+
+.gift-text{
+	display: flex;
+	justify-content: space-between;
+}
+
+.img-container{
+	width: 100%;
+	height: 180px;
+}
+
+.imagen{
+	height: 100%;
+	width: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+
+.contenedor-4{
+	width: 100%;
+	height: 200px;
+	background-color: pink;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.contenedor-4-1{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor-4-1-x{
+	align-items: center;
+	text-align: center;
+	width: 300px
+}
+
+.img-plan{
+	height: 100px;
+}
+
+.footer{
+	height: 200px;
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.container-footer{
+	width: 60%;
+}
+
+.img-regalos{
+	width: auto;
+	overflow: hidden;
+}
+
+.img-item{
+	width: 200px;
+}
+
+.titulo-footer{
+	color: lightblue;
+}
+
+.form{
+	display: block;
+}
+
+label{
+	display: block;
+	margin: 5px;
+}
+
+input{
+	margin: 5px;
+	display: block;
+	border: 1px solid;
+	border-radius: 10%;
+}
+
+@media (max-width: 900px){
+	nav{
+		display: inline-block;
+		text-align: center;
+	}
+	ul{
+		display: block;
+	}
+
+	.grid-container{
+		grid-template-columns: auto auto;
+	}
+
+	.footer{
+		display: block;
+	}
+	.container-footer{
+	width: 100%;
+	}
+}
+
+@media (max-width: 600px){
+	.grid-container{
+		grid-template-columns: auto;
+	}
+
+	.contenedor-4{
+		height: 500px;
+	}
+
+	.contenedor-4-1{
+		display: block;
+		align-items: center;
+	}
+
+	
+}
